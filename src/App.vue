@@ -1,26 +1,7 @@
 <template>
-  <v-app>
-    <div class=""></div>
+  <v-app id="container">
     <v-main>
-      <v-container>
-        <v-row>
-      <v-col
-      cols="12"
-      sm="6"
-      md="3"
-    >
-    
-      <v-text-field
-        label="Outlined"
-        placeholder="Placeholder"
-        outlined
-        align-center="true"
-      ></v-text-field>
-    </v-col>
-  </v-row>
-</v-container>
-    
-      
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
@@ -37,9 +18,7 @@ export default {
 </script>
 
 <style scoped>
-
-
-
-
-
+#container{
+  background-color: #262626;
+}
 </style>
